@@ -1,0 +1,319 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\deflang1033\deflangfe1033
+{\fonttbl
+{\f1\froman\fprq2\fcharset0 Times;}
+}{\colortbl;
+\red0\green0\blue0;
+\red0\green0\blue255;
+\red0\green255\blue255;
+\red0\green255\blue0;
+\red255\green0\blue255;
+\red255\green0\blue0;
+\red255\green255\blue0;
+\red255\green255\blue255;
+\red0\green0\blue128;
+\red0\green128\blue128;
+\red0\green128\blue0;
+\red128\green0\blue128;
+\red128\green0\blue0;
+\red128\green128\blue0;
+\red128\green128\blue128;
+\red192\green192\blue192;
+\red187\green187\blue187;
+}{\stylesheet{\widctlpar\adjustright\fs20\cgrid\snext0 Normal;}{\*\cs10\additive Default Paragraph Font;}
+}{\info{\title V9.1 SAS System Output}{\author SAS Version 9.1}{\operator SAS Version 9.1}{\version1}{\creatim\yr2015\mo3\dy29\hr21\min28\sec52}}
+\widowctrl\ftnbj\aenddoc\formshade\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\fet0\paperw12240\paperh15839\margl360\margr360\margt360\margb360
+\sectd\linex0\endnhere\sbknone\headery720\footery360\marglsxn360\margrsxn360\margtsxn360\margbsxn360
+{\header\pard\plain\qc\pvmrg\phmrg\posxr\posy0{
+\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { DATE \\@ "hh:mm  dddd, MMMM dd, yyyy  " }}}}
+\b\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { PAGE }}}}
+{\par}
+\pard{ }}}
+{\footer\pard\plain\qc{ }}
+\pard\plain\b\i\sb10\sa10\qc\f1\fs26\cf1{Effect of frequency and durarion of intervention on Dianosis agreement}
+{\par}
+\pard{\par}\trowd\trkeep\trqc\trgaph10
+\cltxlrtb\clvertalt\cellx2746
+\pard\plain\intbl\b\i\sb10\sa10\qc\f1\fs24\cf1{The LOGISTIC Procedure\cell}
+{\row}
+\pard\par{\*\bkmkstart IDX}{\*\bkmkend IDX}
+{\tc\v Logistic \tcf67 \tcl1 }
+{\tc\v Parameter Estimates \tcf67 \tcl2 }
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrt\brdrs\brdrw15\brdrcf1\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\qc\f1\fs22\cf1{Analysis of Maximum Likelihood Estimates\cell}
+{\row}
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Parameter\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{DF\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Estimate\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Standard{\line}
+Error\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Wald{\line}
+Chi-Square\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Pr\~>\~ChiSq\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Intercept\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.3397\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1689\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{4.0469\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0443\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Dur\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.00104\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.00150\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.4829\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.4871\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{vistnm\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.00819\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0121\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.4568\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.4991\cell}
+{\row}
+\pard{\par}{\pard\plain\qc{
+}\par}{\page\par}
+
+\sect\sectd\linex0\endnhere\sbknone\headery720\footery360\marglsxn360\margrsxn360\margtsxn360\margbsxn360
+{\header\pard\plain\qc\pvmrg\phmrg\posxr\posy0{
+\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { DATE \\@ "hh:mm  dddd, MMMM dd, yyyy  " }}}}
+\b\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { PAGE }}}}
+{\par}
+\pard{ }}}
+{\footer\pard\plain\qc{ }}
+\pard\plain\b\i\sb10\sa10\qc\f1\fs26\cf1{Effect of ratio frequency and duration of intervention on Diagnosis agreement}
+{\par}
+\pard{\par}\trowd\trkeep\trqc\trgaph10
+\cltxlrtb\clvertalt\cellx2746
+\pard\plain\intbl\b\i\sb10\sa10\qc\f1\fs24\cf1{The LOGISTIC Procedure\cell}
+{\row}
+\pard\par{\*\bkmkstart IDX1}{\*\bkmkend IDX1}
+{\tc\v Logistic \tcf67 \tcl1 }
+{\tc\v Parameter Estimates \tcf67 \tcl2 }
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrt\brdrs\brdrw15\brdrcf1\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\qc\f1\fs22\cf1{Analysis of Maximum Likelihood Estimates\cell}
+{\row}
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1606
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx2578
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx3601
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx4835
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Parameter\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{DF\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Estimate\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Standard{\line}
+Error\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Wald{\line}
+Chi-Square\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Pr\~>\~ChiSq\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1606
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2578
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3601
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4835
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Intercept\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.6204\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1158\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{28.7211\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{<.0001\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1606
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2578
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3601
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4835
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{intDur_rat\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0286\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0337\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.7188\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.3965\cell}
+{\row}
+\pard{\par}{\pard\plain\qc{
+}\par}{\page\par}
+
+\sect\sectd\linex0\endnhere\sbknone\headery720\footery360\marglsxn360\margrsxn360\margtsxn360\margbsxn360
+{\header\pard\plain\qc\pvmrg\phmrg\posxr\posy0{
+\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { DATE \\@ "hh:mm  dddd, MMMM dd, yyyy  " }}}}
+\b\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { PAGE }}}}
+{\par}
+\pard{ }}}
+{\footer\pard\plain\qc{ }}
+\pard\plain\b\i\sb10\sa10\qc\f1\fs26\cf1{Effect of frequency and duration of intervention on treatment agreement}
+{\par}
+\pard{\par}\trowd\trkeep\trqc\trgaph10
+\cltxlrtb\clvertalt\cellx2746
+\pard\plain\intbl\b\i\sb10\sa10\qc\f1\fs24\cf1{The LOGISTIC Procedure\cell}
+{\row}
+\pard\par{\*\bkmkstart IDX2}{\*\bkmkend IDX2}
+{\tc\v Logistic \tcf67 \tcl1 }
+{\tc\v Parameter Estimates \tcf67 \tcl2 }
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrt\brdrs\brdrw15\brdrcf1\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\qc\f1\fs22\cf1{Analysis of Maximum Likelihood Estimates\cell}
+{\row}
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Parameter\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{DF\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Estimate\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Standard{\line}
+Error\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Wald{\line}
+Chi-Square\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Pr\~>\~ChiSq\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Intercept\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.3236\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1763\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{3.3691\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0664\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Dur\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{-0.00428\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.00159\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{7.2897\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0069\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1156
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1580
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2552
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3575
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4809
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6021
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{vistnm\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0490\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0136\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{12.9632\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0003\cell}
+{\row}
+\pard{\par}{\pard\plain\qc{
+}\par}{\page\par}
+
+\sect\sectd\linex0\endnhere\sbknone\headery720\footery360\marglsxn360\margrsxn360\margtsxn360\margbsxn360
+{\header\pard\plain\qc\pvmrg\phmrg\posxr\posy0{
+\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { DATE \\@ "hh:mm  dddd, MMMM dd, yyyy  " }}}}
+\b\sb0\sa0\qr\f1\fs20\cf1{{\field{\*\fldinst { PAGE }}}}
+{\par}
+\pard{ }}}
+{\footer\pard\plain\qc{ }}
+\pard\plain\b\i\sb10\sa10\qc\f1\fs26\cf1{Effect of ratio frequency and durarion of intervention on treamentagreement}
+{\par}
+\pard{\par}\trowd\trkeep\trqc\trgaph10
+\cltxlrtb\clvertalt\cellx2746
+\pard\plain\intbl\b\i\sb10\sa10\qc\f1\fs24\cf1{The LOGISTIC Procedure\cell}
+{\row}
+\pard\par{\*\bkmkstart IDX3}{\*\bkmkend IDX3}
+{\tc\v Logistic \tcf67 \tcl1 }
+{\tc\v Parameter Estimates \tcf67 \tcl2 }
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrt\brdrs\brdrw15\brdrcf1\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\qc\f1\fs22\cf1{Analysis of Maximum Likelihood Estimates\cell}
+{\row}
+\trowd\trkeep\trhdr\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx1606
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx2578
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx3601
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx4835
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalb\clcbpat17\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Parameter\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{DF\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Estimate\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Standard{\line}
+Error\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Wald{\line}
+Chi-Square\cell}
+\pard\plain\intbl\keepn\b\sb60\sa60\qr\f1\fs22\cf1{Pr\~>\~ChiSq\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1606
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2578
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3601
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4835
+\clbrdrb\brdrs\brdrw5\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{Intercept\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.7085\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1274\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{30.9149\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{<.0001\cell}
+{\row}
+\trowd\trkeep\trqc\trgaph60
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\clcbpat17\cellx1182
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx1606
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx2578
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx3601
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\cltxlrtb\clvertalt\cellx4835
+\clbrdrb\brdrs\brdrw15\brdrcf1\clbrdrl\brdrs\brdrw5\brdrcf1\clbrdrr\brdrs\brdrw15\brdrcf1\cltxlrtb\clvertalt\cellx6047
+\pard\plain\intbl\keepn\b\sb60\sa60\ql\f1\fs22\cf1{intDur_rat\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{1\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1325\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.0821\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{2.6081\cell}
+\pard\plain\intbl\keepn\sb60\sa60\qr\f1\fs20\cf1{0.1063\cell}
+{\row}
+\pard{\par}{\pard\plain\qc{
+}\par}}

@@ -1,0 +1,150 @@
+* Written by R;
+*  write.foreign(ashwin, datafile = ashwin_data, codefile = aswhin_code,  ;
+
+DATA  rdata ;
+LENGTH
+ health_center $ 9
+ date_obs $ 8
+ nurse_name $ 5
+ time_start $ 5
+ nurse_train_imai $ 3
+ trainmonth $ 7
+ level_educ $ 2
+ pt_sex $ 6
+ sign_check $ 3
+ nurse_class $ 22
+ nurse_response $ 102
+ mentor_class $ 22
+ mentor_response $ 241
+ reason_hc $ 3
+ chief_complaint1 $ 45
+ mental_specific1 $ 32
+ other_specific1 $ 21
+ nurseSIS1 $ 22
+ mentorSIS1 $ 21
+ chief_complaint2 $ 45
+ nurseSIS2 $ 22
+ mentorSIS2 $ 22
+ mental_specific2 $ 9
+ other_specific2 $ 24
+ nurseSIS3 $ 9
+ mentorSIS3 $ 21
+ chief_complaint3 $ 44
+ mental_specific3 $ 34
+ other_specific3 $ 19
+ nurseask_cough $ 30
+ nurseask_weightloss $ 30
+ nurseask_pallor $ 30
+ nurseask_lesions $ 30
+ nurseask_penile $ 30
+ nurseask_scrotal $ 30
+ nurseask_net $ 30
+ nurseask_counsel_net $ 3
+ nurseask_smoke $ 30
+ nurseask_counsel_smoke $ 3
+ nurseask_alc $ 30
+ nurseask_counsel_alc $ 3
+ nurseask_sex $ 30
+ nurseask_counsel_sex $ 3
+ nurseask_preg $ 30
+ nurseask_refer_anc $ 3
+ nurseask_period_date $ 10
+ nurseask_fp $ 13
+ nurseask_refer_fpclinic $ 3
+ nurseask_hiv $ 30
+ nurseask_hivtest_result $ 8
+ nurseask_refer_hivtest $ 3
+ time_end $ 11
+ needsputum $ 27
+ needsocial $ 22
+ needhb $ 18
+ needHIV $ 21
+ needmalaria $ 23
+;
+
+INFILE  "ashwin_data" 
+     DSD 
+     LRECL= 843 ;
+INPUT
+ ID
+ health_center
+ date_obs
+ nurse_name
+ nurseID
+ time_start
+ nurse_train_imai
+ trainmonth
+ level_educ
+ exp_opd
+ pt_age
+ pt_sex
+ bp_dias
+ temp
+ weight
+ pulse
+ reg_clerk
+ imai_nurse
+ other_staff
+ sign_check
+ nurse_class
+ nurse_response
+ mentor_class
+ mentor_response
+ reason_hc
+ chief_complaint1
+ mental_specific1
+ other_specific1
+ nurseSIS1
+ mentorSIS1
+ chief_complaint2
+ nurseSIS2
+ mentorSIS2
+ mental_specific2
+ other_specific2
+ nurseSIS3
+ mentorSIS3
+ chief_complaint3
+ mental_specific3
+ other_specific3
+ nurseask_cough
+ nurseask_cough_days
+ nurseask_weightloss
+ nurseask_pallor
+ nurseask_lesions
+ nurseask_penile
+ nurseask_scrotal
+ nurseask_net
+ nurseask_counsel_net
+ nurseask_smoke
+ nurseask_counsel_smoke
+ nurseask_alc
+ nurseask_counsel_alc
+ nurseask_sex
+ nurseask_counsel_sex
+ nurseask_preg
+ nurseask_refer_anc
+ nurseask_period_date
+ nurseask_fp
+ nurseask_refer_fpclinic
+ nurseask_hiv
+ nurseask_hivtest_result
+ nurseask_refer_hivtest
+ time_end
+ diag_agree
+ tx_agree
+ classagree1
+ classagree2
+ classagree3
+ height
+ treatagree1
+ treatagree2
+ treatagree3
+ needsputum
+ needsocial
+ needhb
+ needHIV
+ needmalaria
+ needrefer
+ bp_sys
+;
+RUN;

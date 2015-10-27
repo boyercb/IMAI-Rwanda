@@ -1,0 +1,78 @@
+---
+title: ""
+output: chris::plos_article2
+setspace: doublespacing
+csl: plos.csl
+geometry: margin=1in
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{dcolumn} 
+  - \usepackage{rotating}
+---
+
+# Model Description
+# Model Descriptions
+We estimate the impact of SERC services using generalized estimating equations to model change in facility reports of births and rates of maternal deaths and cesarian sections in the period before and after the implementation of SERC. Data from SERC facilities are compared to that of a control group comprised of facilities in neighboring districts in the Upper East and Upper West Regions of Ghana over the period of January 2009 to December 2014. Controls were selected from among facilities with similar socio-demographic and health indicators statistics in the period prior to the implementation of SERC. Regression models take the form:
+
+\begin{align}
+\textrm{logit} [ y_{ijk} ] &= \beta_{0} + \beta_{1} x_{ijk} + \beta_{2} z_{ijk} + \beta_{3} x_{ijk} z_{ijk} + \epsilon_{ij} \\
+P(\mu | x,w) \sim & \textrm{Binomial} [ \mu, \sigma^2 ] \nonumber
+\end{align}
+
+where, 
+
+\begin{description}
+\item[ $y_{ijk}$ ] The outcome of interest for complaint $i$ seen by nurse $j$ at facility $k$. 
+\item[ $x_{ijk}$ ] Discrete dummy variable indicator of whether the nurse was in the March training cohort.
+\item[ $z_{ij}$ ] Discrete dummy variable indicator of whether the nurse was in the March training cohort.
+\item[ $z_{ij}$ ] Discrete dummy variable indicator of whether facility $i$ is a hospital or lower-level facility.
+\item[ $w_{ij}$ ] Discrete variable indicator of whether observation $j$ is pre- or post-intervention.
+\item[ $u_{ij}$ ] Step function which is equal to $0$ if $t_{ij} < T_{0}$ and is equal to $1$ if $t_{ij} \geq T_{0}$.
+\item[ $\epsilon_{ij}$ ] Error term for facility $i$ at time $j$. 
+\end{description}
+
+# Author summary {-}
+Please keep the Author Summary between 150 and 200 words Use first person. PLoS 
+ONE authors please skip this step. Author Summary not valid for PLoS ONE 
+submissions. 
+
+# Introduction {-}
+Cite fancy references [@Garnier2007].
+
+# Results {-}
+Results and Discussion can be combined.
+
+## Subsection 1 {-}
+You can use R chunks directly to plot graphs.
+
+```{r, graph, echo=TRUE, message=FALSE, fig.height=4, fig.width=4, fig.align='center', fig.cap='Figure caption'}
+require("ggplot2")
+x <- 0:100
+y <- 2 * (x + rnorm(length(x), sd = 3) + 3)
+ggplot(data = data.frame(x, y), 
+       aes(x = x, y = y)) + 
+  geom_point() + 
+  geom_smooth(method = "lm")
+```
+
+## Subsection 2 {-}
+
+# Discussion {-}
+
+# Material and Methods {-}
+You may title this section "Methods" or "Models". "Models" is not a valid title 
+for PLoS ONE authors. However, PLoS ONE authors may use "Analysis" 
+
+# Acknowledgments {-}
+Do NOT remove this, even if you are not including acknowledgments
+
+# References {-}
+A reference list should be automatically created here. However it won't. Pandoc 
+will place the list of references at the end of the document instead. There are 
+no convenient solution for now to force Pandoc to do otherwise. The easiest way 
+to get around this problem is to edit the LaTeX file created by Pandoc before 
+compiling it again using the traditional LaTeX commands.
+
+# Figure Legends {-}
+
+# Tables {-}

@@ -1,0 +1,9 @@
+PROC IMPORT
+DATAFILE= "~/ashwin/imaiblfuq32012_final_v3.xls"
+OUTFILE =work.tmp;
+SHEET= "Data";
+RUN;
+
+DATA imaiblfuq32012_final_v3_rest;
+SET work.tmp;
+RUN;
