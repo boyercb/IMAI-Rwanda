@@ -15,8 +15,17 @@ version 13
 cd "${cleandata}"
 use "IMAI_Rwanda_Patients_Cleaned", replace
 
+// reshape data set to per complaint
 drop mental_specific* other_specific*
-reshape long chief_complaint nursesis mentorsis classagree treatagree, i(id) j(complaint)
+reshape long chief_complaint nursesis mentorsis dx_agree tx_agree, i(id) j(complaint)
 drop if chief_complaint == ""
 
+// save result
 save "IMAI_Rwanda_Complaints_Cleaned", replace
+
+// create nurse-level data set
+use "IMAI_Rwanda_Patients_Cleaned", replace
+keep nurse_id imai_nurse level_educ trainmonth exp_opd health_center nobs
+duplicates drop
+
+save "IMAI_Rwanda_Nurses_Cleaned", replace

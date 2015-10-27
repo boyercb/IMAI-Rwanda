@@ -62,6 +62,10 @@ label define emclass
     4 "Unconscious/convulsing"
     5 "None"
 ;
+label define timeperiod
+    0 "baseline"
+    1 "endline"
+;
 #delimit cr
 
 // <=============== Section 2: Recode values to standardize ================> //
@@ -69,15 +73,57 @@ label define emclass
 // replacements
 replace vitals_clerk = 1 if vitals_clerk == -1
 replace vitals_nurse = 1 if vitals_nurse == -1
-recode classagree1 (2 = 1) (1 = 0)
-recode classagree2 (2 = 1) (1 = 0)
-recode classagree3 (2 = 1) (1 = 0)
-recode treatagree1 (2 = 1) (1 = 0)
-recode treatagree2 (2 = 1) (1 = 0)
-recode treatagree3 (2 = 1) (1 = 0)
+replace vitals_other = 1 if vitals_other == -1
+recode classagree1 (2 = 0)
+recode classagree2 (2 = 0)
+recode classagree3 (2 = 0)
+recode treatagree1 (2 = 0)
+recode treatagree2 (2 = 0)
+recode treatagree3 (2 = 0)
+recode pulse (miss = 0) (nonmiss = 1)
+recode bp_dias (miss = 0) (nonmiss = 1)
+recode bp_sys (miss = 0) (nonmiss = 1)
+recode weight (miss = 0) (nonmiss = 1)
+recode height (miss = 0) (nonmiss = 1)
+recode temp (miss = 0) (nonmiss = 1)
 
+// renames
+rename classagree1 dx_agree1
+rename classagree2 dx_agree2
+rename classagree3 dx_agree3
+rename treatagree1 tx_agree1
+rename treatagree2 tx_agree2
+rename treatagree3 tx_agree3
+
+// change date to Stata internal date format
+g dt = date(date_obs, "MD20Y")
+drop date_obs
+g date_obs = dt
+drop dt
+format date_obs %td
+
+// generate nobs variable
+sort nurse_id date_obs
+egen nobs = count(id), by(nurse_id)
+
+// add a dummy indicating whether the visit was before or after intervention
+g endline = 0
+replace endline = 1 if date_obs >= date("3/31/11", "MD20Y")
+
+// recast imai training variable as ever trained for DiD analysis
 generate imai_nurse = 0
 replace imai_nurse = 1 if nurse_train_imai == "Yes"
+egen imai_nurse2 = max(imai_nurse), by(nurse_id)
+drop imai_nurse
+g imai_nurse = imai_nurse2
+drop imai_nurse2
+
+// encone pt_sex
+encode pt_sex, g(sex)
+recode sex (2 = 0)
+drop pt_sex
+g pt_sex = sex
+drop sex
 
 // <================= Section 3: Define variable codebook ==================> //
 
@@ -124,12 +170,13 @@ char nursesis3[description]        "Diagnosis code selected by nurse for third c
 char mentorsis1[description]       "Diagnosis code selected by mentor for first complaint."
 char mentorsis2[description]       "Diagnosis code selected by mentor for second complaint."
 char mentorsis3[description]       "Diagnosis code selected by mentor for third complaint."
-char classagree1[description]      "Did the diagnoses selected by the nurse and mentor agree?"
-char classagree2[description]      "Did the diagnoses selected by the nurse and mentor agree?"
-char classagree3[description]      "Did the diagnoses selected by the nurse and mentor agree?"
-char treatagree1[description]      "Did the treatment recommendations selected by the nurese and mentor agree?"
-char treatagree2[description]      "Did the treatment recommendations selected by the nurese and mentor agree?"
-char treatagree3[description]      "Did the treatment recommendations selected by the nurese and mentor agree?"
+char dx_agree1[description]        "Did the diagnoses selected by the nurse and mentor agree?"
+char dx_agree2[description]        "Did the diagnoses selected by the nurse and mentor agree?"
+char dx_agree3[description]        "Did the diagnoses selected by the nurse and mentor agree?"
+char tx_agree1[description]        "Did the treatment recommendations selected by the nurese and mentor agree?"
+char tx_agree2[description]        "Did the treatment recommendations selected by the nurese and mentor agree?"
+char tx_agree3[description]        "Did the treatment recommendations selected by the nurese and mentor agree?"
+char nobs[description]             "The number of times the nurse was observed during the study."
 
 // specify label to be added to variables
 char health_center[code] healthcenter
@@ -143,13 +190,21 @@ char sign_check[code] yesno
 char nurse_class[code] emclass
 char mentor_class[code] emclass
 char reason_hc[code] yesno
-char classagree1[code] yesno
-char classagree2[code] yesno
-char classagree3[code] yesno
-char treatagree1[code] yesno
-char treatagree2[code] yesno
-char treatagree3[code] yesno
+char dx_agree1[code] yesno
+char dx_agree2[code] yesno
+char dx_agree3[code] yesno
+char tx_agree1[code] yesno
+char tx_agree2[code] yesno
+char tx_agree3[code] yesno
 char imai_nurse[code] yesno
+char endline[code] timeperiod
+char pulse[code] yesno
+char bp_dias[code] yesno
+char bp_sys[code] yesno
+char weight[code] yesno
+char height[code] yesno
+char temp[code] yesno
+char pt_sex[code] sex
 
 // <================ Section 4: Apply value labels to factors =================> //
 
@@ -165,6 +220,8 @@ foreach var in `r(varlist)' {
 	}
 	label values `var' `list'
 }
+
+
 
 cd "${cleandata}"
 save "IMAI_Rwanda_Patients_Cleaned", replace
