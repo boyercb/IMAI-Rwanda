@@ -25,7 +25,7 @@ save "IMAI_Rwanda_Complaints_Cleaned", replace
 
 // create nurse-level data set
 use "IMAI_Rwanda_Patients_Cleaned", replace
-keep nurse_id imai_nurse level_educ trainmonth exp_opd health_center nobs
+keep nurse_id imai_ever imai_mar imai_oct level_educ trainmonth exp_opd health_center nobs
 duplicates drop
 
 save "IMAI_Rwanda_Nurses_Cleaned", replace
