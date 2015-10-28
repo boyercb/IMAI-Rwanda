@@ -18,18 +18,18 @@ use "IMAI_Rwanda_Complaints_Cleaned", replace
 cd "${tables}/unformatted"
 // table 1: summary statistics by treatment status
 #delimit ;
-table1 if endline == 0, by(imai_nurse)
+table1 if endline1 == 0, by(imai_ever)
   vars( tx_agree cate \
         dx_agree cate \
         pt_sex cate \
         pt_age contn \
+        duration contn \
         pulse cate \
         bp_dias cate \
         bp_sys cate \
         weight cate \
         temp cate \
-        vitals_clerk cate \
-        vitals_nurse cate \
+        vitals_check cate \
         sign_check cate \
         level_educ cate \
         exp_opd contn \
@@ -39,25 +39,25 @@ table1 if endline == 0, by(imai_nurse)
   saving("table_01_desc_stats.xls", sheet("baseline") replace)
   plusminus
   format(%2.1f);
-table1 if endline == 1, by(imai_nurse)
+table1 if endline1 == 1, by(imai_ever)
   vars( tx_agree cate \
         dx_agree cate \
         pt_sex cate \
         pt_age contn \
+        duration contn \
         pulse cate \
         bp_dias cate \
         bp_sys cate \
         weight cate \
         temp cate \
-        vitals_clerk cate \
-        vitals_nurse cate \
+        vitals_check cate \
         sign_check cate \
         level_educ cate \
         exp_opd contn \
         nobs contn \
         health_center cat \
       )
-  saving("table_01_desc_stats.xls", sheet("endline") replace)
+  saving("table_01_desc_stats.xls", sheet("endline"))
   plusminus
   format(%2.1f);
 #delimit cr
