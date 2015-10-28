@@ -34,13 +34,13 @@ run 02_reshape.do
 // <================== Section 3: Descriptive statistics  ==================> //
 
 cd "${bin}"
-do 03_desc_table1.do
+run 03_desc_table1.do
 cd "${bin}"
 run 04_desc_table2.do
 
 // <================ Section 4: Formal statistical analysis ================> //
 
 cd "${bin}"
-run 05_analysis_logistic.do
+run 05_logistic_tableS1.do
 cd "${bin}"
-run 06_analysis_multilevel.do
+*run 06_analysis_multilevel.do
