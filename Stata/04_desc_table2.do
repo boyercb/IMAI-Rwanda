@@ -18,9 +18,11 @@ use "IMAI_Rwanda_Nurses_Cleaned", replace
 cd "${tables}/unformatted"
 // table 1: summary statistics by treatment status
 #delimit ;
-table1, by(imai_nurse)
+table1, by(imai_ever)
   vars( level_educ cate \
         exp_opd contn \
+        imai_mar bine \
+        imai_oct bine \
         nobs contn \
         health_center cat \
 	    )
