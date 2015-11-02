@@ -24,14 +24,12 @@ eststo: quietly melogit tx_agree i.imai_ever##i.endline1 i.pt_sex exp_opd nobs d
 esttab using table_03_DiD.csv, label wide se(2) b(2) ///
     title("Difference-in-difference estimates of effects of IMAI training of"    ///
           "nurses on odds of proper diagnosis and treatment, Rwanda 2011-2012.") ///
-    replace                                    ///
+    eform replace                                    ///
     depvars
 eststo clear
 
-eststo: quietly melogit dx_agree i.imai_mar##i.endline1 i.pt_sex exp_opd nobs if imai_oct != 1 || nurse_id: , or
-eststo: quietly melogit dx_agree i.imai_oct##i.endline2 i.pt_sex exp_opd nobs if imai_mar != 1 || nurse_id: , or
-eststo: quietly melogit tx_agree i.imai_mar##i.endline1 i.pt_sex exp_opd nobs if imai_oct != 1 || nurse_id: , or
-eststo: quietly melogit tx_agree i.imai_oct##i.endline2 i.pt_sex exp_opd nobs if imai_mar != 1 || nurse_id: , or
+eststo: quietly melogit dx_agree i.imai_mar##i.endline1##i.imai_oct##i.endline2 i.pt_sex exp_opd nobs || nurse_id: , or
+eststo: quietly melogit tx_agree i.imai_mar##i.endline1##i.imai_oct##i.endline2 i.pt_sex exp_opd nobs || nurse_id: , or
 esttab using table_04_DiD_cohorts.csv, label wide se(2) b(2) ///
     title("Difference-in-difference estimates of effects of IMAI training of"    ///
           "nurses on odds of proper diagnosis and treatment, Rwanda 2011-2012.") ///
