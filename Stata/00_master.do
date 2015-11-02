@@ -27,7 +27,7 @@ global tables "${proj}/tables"
 
 // <================== Section 2: Clean and reshape data  ==================> //
 cd "${bin}"
-run 01_clean_and_code.do
+run 01_clean_data.do
 cd "${bin}"
 run 02_reshape.do
 
@@ -41,6 +41,8 @@ run 04_desc_table2.do
 // <================ Section 4: Formal statistical analysis ================> //
 
 cd "${bin}"
-run 05_logistic_tableS1.do
+run 05_logit_table3+4.do
 cd "${bin}"
-*run 06_analysis_multilevel.do
+run 06_sensitivity_tableS1.do
+cd "${bin}"
+*run 07_figures.do
