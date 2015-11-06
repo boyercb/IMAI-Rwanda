@@ -129,6 +129,7 @@ drop time_start time_end
 sort nurse_id date_obs
 by nurse_id: generate nobs = _n
 
+
 // generate vitals variable
 g vitals_check = 0
 replace vitals_check = 1 if inlist(1, vitals_clerk, vitals_nurse, vitals_other)
@@ -302,6 +303,10 @@ foreach var in `r(varlist)' {
 	}
 	label values `var' `list'
 }
+
+egen edu = min(level_edu), by(nurse_id)
+replace level_educ = edu if level_educ == .
+replace level_educ = 0 if edu == 0
 
 cd "${cleandata}"
 save "IMAI_Rwanda_Patients_Cleaned", replace

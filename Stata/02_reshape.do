@@ -23,9 +23,12 @@ drop if chief_complaint == ""
 // save result
 save "IMAI_Rwanda_Complaints_Cleaned", replace
 
+// read per patient data set
+cd "${cleandata}"
 // create nurse-level data set
 use "IMAI_Rwanda_Patients_Cleaned", replace
-keep nurse_id imai_ever imai_mar imai_oct level_educ trainmonth exp_opd health_center nobs
+keep nurse_id imai_ever imai_mar imai_oct level_educ nurse_train_imai trainmonth exp_opd health_center nobs
+collapse (mean) nobs exp_opd (max) imai_ever imai_mar imai_oct, by(nurse_id level_educ health_center)
 duplicates drop
 
 save "IMAI_Rwanda_Nurses_Cleaned", replace

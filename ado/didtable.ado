@@ -188,7 +188,7 @@ program define didtable
 				else qui encode `varname', gen(`varnum')
 
 
-				did `varname', treated(`treated') period(`period') cluster(`cluster') logit
+				did `varname', treated(`treated') period(`period') cluster(`cluster')
 				noisily di "hi"
 
 				local p0 `r(p0)'

@@ -41,8 +41,8 @@ run 04_desc_table2.do
 // <================ Section 4: Formal statistical analysis ================> //
 
 cd "${bin}"
-run 05_logit_table3+4.do
+run 05_DiD_table3.do
 cd "${bin}"
-run 06_sensitivity_tableS1.do
+run 06_sens_tableS1+S2.do
 cd "${bin}"
-*run 07_figures.do
+run 07_figures.do

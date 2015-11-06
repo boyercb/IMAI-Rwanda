@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Description>created using xml_tab</Description>
+  <LastAuthor>Christopher Boyer</LastAuthor>
+  <Created>2015-11-05T05:04:03Z</Created>
+  <LastSaved>2015-11-05T04:57:25Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11560</WindowHeight>
+  <WindowWidth>26900</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>140</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0&quot;&quot;;\-#,##0&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0&quot;&quot;;\-#,##0&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0.00&quot;&quot;;\-#,##0.00&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0.00&quot;***&quot;;\-#,##0.00&quot;***&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s98">
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s101">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0&quot;&quot;;\-#,##0&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s104">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0.00&quot;&quot;;\-#,##0.00&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s106">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0&quot;&quot;;\-#,##0&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s119">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:Italic="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0&quot;&quot;;\-#,##0&quot;&quot;"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s122">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s123">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font/>
+   <Interior/>
+   <NumberFormat ss:Format="#,##0.00&quot;***&quot;;\-#,##0.00&quot;***&quot;"/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="140"/>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">b</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">SE</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">z</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">P-value</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Diagnosis (logit RE robust)</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1565907655061835</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1373310479585354</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.1402429955494351</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.25418507941541407</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Treatment (logit RE robust)</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.27687198996852719</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7.8704364052632994E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3.5178734152958908</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.3501982216699998E-4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Diagnosis (logit clust)</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.15111657803385989</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1190716131567592</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.269123462994602</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.20439703317271979</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Treatment (logit clust)</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.29722670925095912</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7.2658779553887304E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.0907198149470876</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.3003640573200001E-5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Diagnosis (probit clust)</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.15569759999999999</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.10592790000000001</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.469846</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.14160347000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Treatment (probit RE clust)</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.29435109999999998</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">6.5580100000000002E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.4884190000000004</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">2.4832101013979999E-4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">note:  .001 - ***; .01 - **; .05 - *;</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R7C5</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="15" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="149"/>
+   <Row>
+    <Cell ss:StyleID="s98"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s98"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s106"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Diff-in-Diff</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">SE</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">z</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">P-value</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">Diagnosis Models</Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s119"><Data ss:Type="String"><I
+       xmlns="http://www.w3.org/TR/REC-html40">  </I><Font
+       xmlns="http://www.w3.org/TR/REC-html40">LPM RE robust</Font></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.18312030000000001</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1217254</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.13200000000000001</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  LPM cluster</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.155697</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1061301</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.47</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.14160347000000001</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  logit RE robust</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1565907655061835</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1373310479585354</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.1402429955494351</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.25418507941541407</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  logit cluster</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.15111657803385989</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.1190716131567592</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.269123462994602</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.20439703317271979</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  probit RE robust</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  probit cluster</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.15569759999999999</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.10592790000000001</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1.469846</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">0.14160347000000001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s119"><Data ss:Type="String">Treatment Models</Data></Cell>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:StyleID="s101"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s119"><Data ss:Type="String"><I
+       xmlns="http://www.w3.org/TR/REC-html40">  </I><Font
+       xmlns="http://www.w3.org/TR/REC-html40">LPM RE robust</Font></Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.26615129999999998</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7.8725000000000003E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3.38</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  LPM cluster</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.29435109999999998</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">6.5708100000000005E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.4800000000000004</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.3003640573200001E-5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  logit RE robust</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.27687198996852719</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7.8704364052632994E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3.5178734152958908</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.3501982216699998E-4</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">  logit cluster</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.29722670925095912</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7.2658779553887304E-2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.0907198149470876</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4.3003640573200001E-5</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">  probit cluster</Data></Cell>
+    <Cell ss:StyleID="s123"><Data ss:Type="Number">0.29435109999999998</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="Number">6.5580100000000002E-2</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="Number">4.4884190000000004</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="Number">2.4832101013979999E-4</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <ss:FontList>01 Arial 10</ss:FontList>
+ <ss:Sheetnames>?sheet1?</ss:Sheetnames>
+</Workbook>

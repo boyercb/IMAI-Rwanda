@@ -13,21 +13,43 @@ version 13
 
 // read per patient data set
 cd "${cleandata}"
-use "IMAI_Rwanda_Nurses_Cleaned", replace
+use "IMAI_Rwanda_Complaints_Cleaned", replace
+
 
 cd "${tables}/unformatted"
-// table 1: summary statistics by treatment status
+// table 2: summary statistics by time period and treatment status
 #delimit ;
-table1, by(imai_ever)
-  vars( level_educ cate \
-        exp_opd contn \
-        imai_mar bine \
-        imai_oct bine \
-        nobs contn \
-        health_center cat \
-	    )
-  saving("table_01_desc_nurses.xls", replace)
-  plusminus
-  format(%2.1f);
+didtable, treated(imai_ever) period(endline1)
+  vars("tx_agree bin \
+        dx_agree bin \
+        pt_sex bin \
+        pt_age cont \
+        duration cont \
+        pulse cont \
+        bp_dias bin \
+        bp_sys bin \
+        weight bin \
+        height bin \
+        temp bin \
+        vitals_check bin \
+        sign_check bin \
+        level_educ bin \
+        exp_opd cont \
+        nobs cont \
+        nurseask_cough bin \
+        nurseask_weightloss bin \
+        nurseask_pallor bin \
+        nurseask_lesions bin \
+        nurseask_penile bin \
+        nurseask_scrotal bin \
+        nurseask_net bin \
+        nurseask_smoke bin \
+        nurseask_alc bin \
+        nurseask_sex bin \
+        nurseask_preg bin \
+        nurseask_fp bin \
+        nurseask_hiv bin " )
+  saving("table_02_desc_stats.xls", replace)
+  cluster(nurse_id)
+  plusminus;
 #delimit cr
-
